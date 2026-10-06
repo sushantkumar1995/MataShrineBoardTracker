@@ -1,0 +1,22 @@
+{
+  "name": "mata-shrine-board-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.js",
+    "test:rls": "node tests/rls.integration.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "exceljs": "4.4.0",
+    "idb": "8.0.3"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "vite": "^6.4.1"
+  }
+}
