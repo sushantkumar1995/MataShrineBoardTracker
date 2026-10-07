@@ -1,4 +1,4 @@
-const VERSION = 'shrine-sector-emailjs-v3';
+const VERSION = 'shrine-mobile-v4';
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(['./','./manifest.webmanifest','./icon-192.png','./icon-512.png']))); self.skipWaiting(); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
